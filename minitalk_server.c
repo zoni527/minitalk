@@ -34,6 +34,7 @@ int	main(void)
 	rval = sigaction(SIGUSR2, &act, NULL);
 	ft_printf("Server pid: %d\n", pid);
 	bits_received = 0;
+	c = 0;
 	sig = -1;
 	while (1)
 	{
